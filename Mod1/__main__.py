@@ -8,10 +8,13 @@ constant space.
 """
 from Mod1.linked_list import LinkedList
 
+
 def remove_duplicates(linked_list):
     # declares the head node as the parameter given
     current_node = linked_list
 
     # first while loop that checks that the current node is not the tail
     while current_node is not None:
+        next_node = current_node.next()
 
+        # second while loop to check that next_node is not a tail or same value
