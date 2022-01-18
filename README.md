@@ -1,16 +1,22 @@
-# Coding Practice: Tournament Winner
+# Coding Practice: Remove Duplicates From Linked List
 This project is meant for me to practice coding interview questions with Python.
-I am presented with the following task: Given an array of pairs representing 
-teams that have competed against each other and an array containing the 
-results of the competition, write a function that returns the winner of each 
-tournament.
+I am presented with the following task: Given the head node for a 
+Singly Linked List with the values sorted in ascending order. Write a function 
+that returns a modified version of the Linked List that does not contain any 
+nodes with duplicate values. It should be modified in place (a brand-new 
+list should not be created), and the modified Linked List should still have 
+its nodes sorted in ascending values.
 
 Important Background Information:
-This exercise demonstrates an exercise of a competition that follows a 
-round-robin elimination style (where only the winner advances). Each team is 
-either designated as a home or away team. There are no ties and only one 
-team can advance to the next round of competitions. Each winning score will 
-increase by 3 points. Each team's name should be limited to only 30 characters.
+Each linked_list node should have an integer value as well as a next node 
+pointing to the next node in the list or to None/null if it is the tail of 
+the list.
+
+Sample Input:
+linked_list = 1 -> 1 -> 3 -> 4 -> 4 -> 4 -> 5 -> 6 -> 6 (head node is 1)
+
+Sample Output:
+1 -> 3 -> 4 -> 5 -> 6 (head node is 1)
 
 The arrays are noted as follows:
 competitions = [homeTeam, awayTeam]
