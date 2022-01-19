@@ -7,7 +7,7 @@ structure to work.
 
 
 class LinkedList:
-    def __init__(self, value):
+    def __init__(self, value=None):
         """
         When we design a class we have to make sure that the it is
         initialized with the proper attributes it needs to run properly. The
@@ -18,3 +18,5 @@ class LinkedList:
         self.value = value
         self.next = None
 
+
+link = LinkedList()
