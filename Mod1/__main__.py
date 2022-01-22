@@ -24,7 +24,7 @@ def remove_duplicates(linked_list):
 
         current_node.next = next_node
         current_node = next_node
-
+4
     return linked_list
 
 print(remove_duplicates({
